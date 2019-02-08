@@ -36,14 +36,14 @@ public class FilePartReader {
         File file = new File(filePath);
         Scanner sc = new Scanner(file);
         List<String> lines = new ArrayList<>();
+        List<String> resultLines = new ArrayList<>();
 
         while (sc.hasNextLine()) { lines.add(sc.nextLine()); }
 
-
-        List<String> resultLines = new ArrayList<>();
         for (int i = fromLine - 1; i < toLine - 1; i++) {
             resultLines.add(lines.get(i));
         }
+
         return String.join(" ", resultLines);
     }
 }

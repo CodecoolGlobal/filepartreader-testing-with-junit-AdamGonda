@@ -17,7 +17,7 @@ class FilePartReaderTest {
     @BeforeAll
     void init() {
         reader = new FilePartReader();
-        reader.setup("/Users/adamgonda/IdeaProjects/current/filepartreader-testing-with-junit-AdamGonda/someTest.txt");
+        reader.setup("/Users/adamgonda/IdeaProjects/current/filepartreader-testing-with-junit-AdamGonda/filePartReader_Test.txt");
     }
 
     @Test
